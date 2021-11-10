@@ -16,4 +16,5 @@ def random_number_generator(num1, num2):
 
 
 if __name__ == '__main__':
+
     print(random_number_generator(-10, 100))

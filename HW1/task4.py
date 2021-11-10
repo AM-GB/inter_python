@@ -42,4 +42,5 @@ def bank_deposit(amount, tern):
 
 
 if __name__ == '__main__':
+
     print(bank_deposit(15000, 6))

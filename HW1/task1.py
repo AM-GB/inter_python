@@ -15,7 +15,6 @@ def multiplication_table(a, b):
 
 if __name__ == '__main__':
     l = list(map(lambda n: str(n), multiplication_table(5, 5)))
-
     print(type(l[0][0]))
 
     for i in l:

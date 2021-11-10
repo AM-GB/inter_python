@@ -35,7 +35,6 @@ def print_directory_contents(sPath):
 
 if __name__ == '__main__':
     # tree = os.walk(get_script_dir())
-
     # for d in tree:
     #     print(d)
 
