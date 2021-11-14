@@ -1,12 +1,12 @@
 class ItemDiscount:
     def __init__(self, name, price):
-        self.name_product = name
-        self.price = price
+        self._name_product = name
+        self._price = price
 
 
 class ItemDiscountReport(ItemDiscount):
     def get_parent_data(self):
-        print(f'Продукт: {self.name_product}\nЦена: {self.price}')
+        print(f'Продукт: {self._name_product}\nЦена: {self._price}')
 
 
 if __name__ == '__main__':
