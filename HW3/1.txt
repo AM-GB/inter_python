@@ -1,0 +1,13 @@
+8  str0
+9  strrep
+9  str2
+rep0  str3
+9  str4
+9  str5
+rep9  str6
+rep4  str7
+8  str8
+3  str9
+3  strrep0
+rep  strreprep
+rep6  strrep2
