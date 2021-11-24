@@ -2,7 +2,8 @@ from django.db import models
 from django.shortcuts import render
 from django.urls import reverse_lazy
 from django.views.generic import CreateView
-from .models import Product
+from django.shortcuts import get_object_or_404
+from .models import Product, ProductCategory
 from mainapp.forms import AdminProductCreateForm
 
 
@@ -29,4 +30,17 @@ class ProductCreate(PageTitleMixin, CreateView):
     model = Product
     form_class = AdminProductCreateForm
     success_url = reverse_lazy('base:index')
-    page_title = 'админка/категории/создание'
+    page_title = 'создание'
+
+
+def category(request, pk):
+    # category = get_object_or_404(ProductCategory, pk=pk)
+    products = Product.objects.prefetch_related(
+        'category').filter(category=pk)
+
+    context = {
+        'page_title': 'товары категории',
+        # 'category': category,
+        'all_products': products,
+    }
+    return render(request, 'mainapp/index.html', context)

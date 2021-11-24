@@ -1827,3 +1827,33 @@ td:first-child {
 .related-products a:hover .text{
 	display: block;
 }
+.modal__input {
+	display: block;
+	margin: 20px auto 20px auto;
+	width: 280px;
+	height: 50px;
+	background: #FFFFFF;
+	-webkit-box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+			box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+	border: none;
+	font-size: 18px;
+	text-align: center;
+	padding: 0 20px;
+	outline: none;
+  }
+.modal .a {
+	display: block;
+	width: 300px;
+	height: 50px;
+	margin: 0 auto;
+	background: #000;
+	border-radius: 5px;
+	text-align: center;
+	color: #fff;
+}
+.show {
+	display:block
+}
+.hide {
+	display:none
+}
