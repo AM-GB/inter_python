@@ -34,6 +34,13 @@
                     date:<br>
                     {{ product.add_dt }}
                 </div>
+                <div class="user_lastlogin">
+                    date:<br>
+                    {% for p in product.category.all %}
+                        {{ p }}
+                    {% endfor %}
+                </div>
+                
             </div>
         {% endfor %}
     </div>

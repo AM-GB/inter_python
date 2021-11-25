@@ -19,6 +19,10 @@ class PageTitleMixin:
 
 def index(request):
     all_products = Product.objects.all()
+    for product in all_products:
+        print('*'*100)
+        print(product.category.all())
+    print(all_products)
     context = {
         'page_title': 'Главная',
         'all_products': all_products,
