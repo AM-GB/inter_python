@@ -1,0 +1,14 @@
+<ul class="menu">
+    <li>
+        <a href="{% url 'base:index' %}">все</a>
+    </li>
+
+    {% for item in menu %}
+        <li>
+            <a href="{% url 'base:category' item.pk %}"
+                class="{% if request.resolver_match.url_name == 'category' and request.resolver_match.kwargs.pk == item.pk %}active{% endif %}">
+                {{ item.name }}
+            </a>
+        </li>
+    {% endfor %}
+</ul>
