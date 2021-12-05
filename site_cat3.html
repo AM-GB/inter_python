@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>
+        
+            Товары категории
+        
+    </title>
+    
+        <link rel="stylesheet" href="/static/fonts/font-awesome/css/font-awesome.css">
+        <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+    
+    
+    
+</head>
+<body>
+<div class="admin_container">
+    <div class="h2 text-center head">
+        Список продуктов
+    </div>
+    
+        <div class="admin_menu">
+            <ul class="menu">
+    <li>
+        <a href="/">все</a>
+    </li>
+
+    
+        <li>
+            <a href="/category/1/"
+                class="">
+                cat1
+            </a>
+        </li>
+    
+        <li>
+            <a href="/category/3/"
+                class="active">
+                cat3
+            </a>
+        </li>
+    
+</ul>
+        </div>
+    
+
+    
+    <div class="users_list">
+        <a href="/create/" class="btn btn-primary new_user">
+            Добавление товара
+        </a>
+        
+            <div class="user_record ">
+                <div class="user_role">
+                    Продукт
+                    <a href="#"
+                       class="btn btn-primary">
+                        редактировать
+                    </a>
+                    <a href="#"
+                       class="btn btn-danger">
+                        удалить
+                    </a>
+                </div>
+                <div class="user_name">
+                    <p><strong>Product4</strong></p>
+                </div>
+                <div class="user_age">
+                    price:<br>
+                    100.00 руб
+                </div>
+                <div class="user_email">
+                    quantity:<br>
+                    33
+                </div>
+                <div class="user_lastlogin">
+                    date:<br>
+                    Nov. 24, 2021, 5:06 p.m.
+                </div>
+                <div class="user_lastlogin">
+                    date:<br>
+                    
+                        cat3
+                    
+                </div>
+                
+            </div>
+        
+            <div class="user_record ">
+                <div class="user_role">
+                    Продукт
+                    <a href="#"
+                       class="btn btn-primary">
+                        редактировать
+                    </a>
+                    <a href="#"
+                       class="btn btn-danger">
+                        удалить
+                    </a>
+                </div>
+                <div class="user_name">
+                    <p><strong>Product5</strong></p>
+                </div>
+                <div class="user_age">
+                    price:<br>
+                    10.00 руб
+                </div>
+                <div class="user_email">
+                    quantity:<br>
+                    100000
+                </div>
+                <div class="user_lastlogin">
+                    date:<br>
+                    Nov. 25, 2021, 4:02 p.m.
+                </div>
+                <div class="user_lastlogin">
+                    date:<br>
+                    
+                        cat1
+                    
+                        cat3
+                    
+                </div>
+                
+            </div>
+        
+    </div>
+
+
+    <div class="modal">
+        <div class="modal__dialog">
+            <div class="modal__content">
+                <form class="form-horizontal" method="post" enctype="multipart/form-data">
+                    <input type="hidden" name="csrfmiddlewaretoken" value="c1BT6cskCtTTiRgRFY1GzGcn0uso71bvtashyBX7bPvLy0zO6EhW6utH8sYgZOsv">
+                    
+                    <br>
+                    <input class="form-control" type="submit" value="сохранить">
+                </form>
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/js/script.js"></script>
+
+</div>
+</body>
+</html>
