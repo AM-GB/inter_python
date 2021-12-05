@@ -1,0 +1,47 @@
+{% extends 'mainapp/base.html' %}
+{% load static %}
+
+{% block container %}
+    <div class="users_list">
+        <a href="{% url 'base:product_create' %}" class="btn btn-primary new_user">
+            Добавление товара
+        </a>
+        {% for product in all_products %}
+            <div class="user_record {% if not product.is_active %}not_active{% endif %}">
+                <div class="user_role">
+                    Продукт
+                    <a href="#"
+                       class="btn btn-primary">
+                        редактировать
+                    </a>
+                    <a href="#"
+                       class="btn btn-danger">
+                        удалить
+                    </a>
+                </div>
+                <div class="user_name">
+                    <p><strong>{{ product.name }}</strong></p>
+                </div>
+                <div class="user_age">
+                    price:<br>
+                    {{ product.price }} руб
+                </div>
+                <div class="user_email">
+                    quantity:<br>
+                    {{ product.quantity }}
+                </div>
+                <div class="user_lastlogin">
+                    date:<br>
+                    {{ product.add_dt }}
+                </div>
+                <div class="user_lastlogin">
+                    date:<br>
+                    {% for p in product.category.all %}
+                        {{ p }}
+                    {% endfor %}
+                </div>
+                
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}
